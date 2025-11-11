@@ -1,118 +1,51 @@
-/* ==========================
-   STYLE.CSS - UTS PROJECT
-   ========================== */
-
-/* Atur seluruh halaman agar fleksibel dan footer di bawah */
-html, body {
-  height: 100%;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  font-family: "Poppins", sans-serif;
-  color: #212529;
-}
-
-/* Gradasi hijau modern untuk latar belakang halaman */
+/* Warna background gradasi hijau modern */
 body {
   background: linear-gradient(135deg, #a8e063, #56ab2f);
-  background-attachment: fixed;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-/* Navbar custom warna kuning */
-.custom-yellow {
-  background-color: #ffcc00 !important;
+/* Navbar kuning cerah */
+.navbar.custom-yellow {
+  background-color: #fdd835;
 }
 
-/* Navbar link hover dan aktif */
-.navbar a.nav-link {
-  color: #222 !important;
-  font-weight: 500;
-  transition: 0.3s;
-}
-
-.navbar a.nav-link:hover {
-  color: #000;
-  text-decoration: underline;
-}
-
-/* Container utama agar isi tidak terlalu menempel tepi */
-.container {
-  flex: 1;
-  padding-bottom: 40px;
-}
-
-/* Tombol */
-.btn {
-  border-radius: 8px;
-  font-weight: 500;
-}
-
-.btn-warning {
-  background-color: #f0ad4e;
-  border: none;
-}
-
-.btn-danger {
-  background-color: #d9534f;
-  border: none;
-}
-
-.btn-info {
-  background-color: #17a2b8;
-  border: none;
-  color: white;
-}
-
-/* Table */
+/* Tabel */
 .table {
-  background-color: #fff;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
-.table th {
-  background-color: #f8f9fa;
-  font-weight: 600;
-}
-
-.table td, .table th {
-  vertical-align: middle;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 15px 0;
-  background: rgba(255, 255, 255, 0.3);
-  font-size: 14px;
-  font-weight: 500;
-  color: #2e2e2e;
-  margin-top: auto;
-  width: 100%;
-  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.05);
-}
-
-/* Input form */
-input[type="text"],
-input[type="date"],
-textarea,
-select {
+  background-color: white;
   border-radius: 8px;
-  border: 1px solid #ced4da;
-  padding: 8px 10px;
-  width: 100%;
-  box-sizing: border-box;
+  overflow: hidden;
 }
 
-/* Responsif */
-@media (max-width: 768px) {
-  .table {
-    font-size: 14px;
-  }
+/* Footer selalu di bawah */
+.footer {
+  margin-top: auto;
+  background: rgba(255, 255, 255, 0.4);
+  font-size: 14px;
+}
 
-  .btn {
-    font-size: 13px;
-    padding: 5px 8px;
-  }
+/* Efek tombol */
+.btn {
+  border-radius: 6px;
+  transition: transform 0.2s ease, opacity 0.3s ease;
+}
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* Efek fade out saat hapus */
+tr.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+/* Notifikasi muncul halus */
+.alert {
+  animation: fadeIn 0.6s ease;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
 }

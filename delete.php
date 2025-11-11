@@ -1,10 +1,13 @@
 <?php
 require 'db.php';
 
-$id = isset($_GET['id']) ? (int)$_GET['id'] : 0;
-if ($id) {
-    $stmt = $pdo->prepare("DELETE FROM calibrations WHERE id = :id");
-    $stmt->execute([':id'=>$id]);
+if (isset($_GET['id'])) {
+    $id = (int) $_GET['id'];
+    $stmt = $pdo->prepare("DELETE FROM calibrations WHERE id = ?");
+    $stmt->execute([$id]);
 }
-header('Location: index.php');
+
+// Setelah hapus, redirect ke index dengan parameter notifikasi
+header("Location: index.php?deleted=true");
 exit;
+?>
