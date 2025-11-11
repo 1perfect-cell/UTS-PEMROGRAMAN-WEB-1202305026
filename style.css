@@ -1,34 +1,43 @@
-/* ========== STYLE UTAMA ========== */
+/* ===============================
+   STYLE UTAMA
+=============================== */
 body {
-  background: #f8f9fa;
-  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-}
-
-.navbar-brand {
-  font-weight: 700;
-  letter-spacing: .3px;
+  background-color: #f8f9fa;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 .table td, .table th {
   vertical-align: middle;
 }
 
+/* ===============================
+   NAVBAR WARNA KUNING
+=============================== */
+/* Navbar kuning override */
+nav.navbar.custom-yellow {
+  background-color: #ffcc00 !important; /* paksa kuning */
+  border-bottom: 3px solid #e6b800 !important;
+}
+
+/* Warna teks */
+nav.navbar.custom-yellow .navbar-brand,
+nav.navbar.custom-yellow .nav-link {
+  color: #333 !important;
+}
+
+nav.navbar.custom-yellow .nav-link:hover {
+  color: #000 !important;
+}
+
+
+/* ===============================
+   FOOTER
+=============================== */
 footer {
-  background: white;
+  background: #fff;
   border-top: 1px solid #e9ecef;
-}
-
-/* ========== WARNA NAVBAR KUNING ========== */
-.custom-yellow {
-  background-color: #ffcc00 !important; /* kuning cerah */
-  border-bottom: 3px solid #e6b800;     /* garis bawah sedikit gelap */
-}
-
-.navbar-light .navbar-brand,
-.navbar-light .nav-link {
-  color: #333 !important; /* teks gelap agar kontras */
-}
-
-.navbar-light .nav-link:hover {
-  color: #000 !important; /* sedikit lebih gelap saat hover */
+  color: #555;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 40px;
 }
