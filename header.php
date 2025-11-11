@@ -11,12 +11,17 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Custom CSS (pastikan ini di bawah Bootstrap) -->
+  <!-- Custom CSS -->
+  <!-- Karena proyekmu di D:\XAMPP\htdocs\UTS, gunakan path absolut seperti di bawah -->
   <link rel="stylesheet" href="/UTS/assets/css/style.css">
+
+  <!-- Icon Bootstrap (opsional, untuk navbar toggle icon) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
 <body>
+
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light custom-yellow mb-4">
+  <nav class="navbar navbar-expand-lg navbar-light custom-yellow mb-4 shadow-sm">
     <div class="container">
       <a class="navbar-brand fw-bold" href="index.php">Calibration</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -33,5 +38,5 @@
     </div>
   </nav>
 
-  <!-- Kontainer utama -->
+  <!-- Konten utama -->
   <div class="container">
