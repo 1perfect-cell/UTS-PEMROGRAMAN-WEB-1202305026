@@ -1,44 +1,118 @@
-/* ==========================================
-   BACKGROUND GRADASI HIJAU MODERN
-========================================== */
-body {
-  background: linear-gradient(135deg, #b9f6ca 0%, #81c784 50%, #43a047 100%) !important;
-  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  min-height: 100vh;
+/* ==========================
+   STYLE.CSS - UTS PROJECT
+   ========================== */
+
+/* Atur seluruh halaman agar fleksibel dan footer di bawah */
+html, body {
+  height: 100%;
   margin: 0;
-  padding: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  color: #212529;
 }
 
-/* ==========================================
-   NAVBAR WARNA KUNING
-========================================== */
-nav.navbar.custom-yellow {
+/* Gradasi hijau modern untuk latar belakang halaman */
+body {
+  background: linear-gradient(135deg, #a8e063, #56ab2f);
+  background-attachment: fixed;
+}
+
+/* Navbar custom warna kuning */
+.custom-yellow {
   background-color: #ffcc00 !important;
-  border-bottom: 3px solid #e6b800 !important;
 }
 
-nav.navbar.custom-yellow .navbar-brand,
-nav.navbar.custom-yellow .nav-link {
-  color: #333 !important;
+/* Navbar link hover dan aktif */
+.navbar a.nav-link {
+  color: #222 !important;
+  font-weight: 500;
+  transition: 0.3s;
 }
 
-nav.navbar.custom-yellow .nav-link:hover {
-  color: #000 !important;
+.navbar a.nav-link:hover {
+  color: #000;
+  text-decoration: underline;
 }
 
-/* ==========================================
-   TABEL & FOOTER
-========================================== */
+/* Container utama agar isi tidak terlalu menempel tepi */
+.container {
+  flex: 1;
+  padding-bottom: 40px;
+}
+
+/* Tombol */
+.btn {
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.btn-warning {
+  background-color: #f0ad4e;
+  border: none;
+}
+
+.btn-danger {
+  background-color: #d9534f;
+  border: none;
+}
+
+.btn-info {
+  background-color: #17a2b8;
+  border: none;
+  color: white;
+}
+
+/* Table */
+.table {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.table th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+}
+
 .table td, .table th {
   vertical-align: middle;
 }
 
+/* Footer */
 footer {
-  background: rgba(255, 255, 255, 0.8);
-  border-top: 1px solid #e9ecef;
-  color: #333;
   text-align: center;
-  padding: 10px 0;
-  margin-top: 40px;
+  padding: 15px 0;
+  background: rgba(255, 255, 255, 0.3);
+  font-size: 14px;
   font-weight: 500;
+  color: #2e2e2e;
+  margin-top: auto;
+  width: 100%;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Input form */
+input[type="text"],
+input[type="date"],
+textarea,
+select {
+  border-radius: 8px;
+  border: 1px solid #ced4da;
+  padding: 8px 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .table {
+    font-size: 14px;
+  }
+
+  .btn {
+    font-size: 13px;
+    padding: 5px 8px;
+  }
 }

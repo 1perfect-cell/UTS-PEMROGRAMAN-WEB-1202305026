@@ -12,10 +12,9 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom CSS -->
-  <!-- Karena proyekmu di D:\XAMPP\htdocs\UTS, gunakan path absolut seperti di bawah -->
-  <link rel="stylesheet" href="/UTS/assets/css/style.css">
+  <link rel="stylesheet" href="style.css">
 
-  <!-- Icon Bootstrap (opsional, untuk navbar toggle icon) -->
+  <!-- Icon Bootstrap -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
 <body>
