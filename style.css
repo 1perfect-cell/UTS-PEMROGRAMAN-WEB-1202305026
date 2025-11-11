@@ -1,4 +1,4 @@
-/* assets/css/style.css */
+/* ========== STYLE UTAMA ========== */
 body {
   background: #f8f9fa;
   font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
@@ -16,4 +16,19 @@ body {
 footer {
   background: white;
   border-top: 1px solid #e9ecef;
+}
+
+/* ========== WARNA NAVBAR KUNING ========== */
+.custom-yellow {
+  background-color: #ffcc00 !important; /* kuning cerah */
+  border-bottom: 3px solid #e6b800;     /* garis bawah sedikit gelap */
+}
+
+.navbar-light .navbar-brand,
+.navbar-light .nav-link {
+  color: #333 !important; /* teks gelap agar kontras */
+}
+
+.navbar-light .nav-link:hover {
+  color: #000 !important; /* sedikit lebih gelap saat hover */
 }
